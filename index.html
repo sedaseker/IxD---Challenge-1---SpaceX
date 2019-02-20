@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Challenge 1</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+	</head>
+
+	<body>
+	<div class="container">
+		<div class="navigatie">
+			<h1>Interface for in Space</h1>
+			<img class="logo" src="images/logo.png" alt="spacex" />	
+			
+		</div>
+
+	<section>
+		<div class="snelheid">
+			<h2>Snelheid</h2>
+			<canvas width="300" height="400"></canvas>
+		</div>
+	</section>
+
+	<section>
+		<div class="voedsel">
+			<h2> Voedsel </h2>
+			<div class="content2">
+       		<canvas id="myChart2"></canvas>
+     		</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="temperatuur">
+			<h2>Temperatuur</h2>
+  			<line-chart></line-chart>
+		</div>
+	</section>
+  	
+  	<script src='https://unpkg.com/vue'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js'></script>
+
+	<script src='https://unpkg.com/vue-chartjs@3.0.1-rc2/dist/vue-chartjs.js'></script>
+
+	<script type="text/javascript" src="javascript/temperatuur.js"></script>
+	<script type="text/javascript" src="javascript/voedsel.js"></script>
+	<script type="text/javascript" src="javascript/snelheid.js"></script>
+
+	</div>
+
+	</body>
+	
+</html>
+

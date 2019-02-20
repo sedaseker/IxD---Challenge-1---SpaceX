@@ -1,0 +1,182 @@
+body {
+	color: white;
+	font-family: Calibri;
+	background-image: url("images/background.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.logo {
+	width: 500px;
+	height: 100px;
+	padding-left: 10%;
+}
+.navigatie {
+	background-color: white;
+	opacity: 0.9;
+	margin:20px;
+}
+
+.container {
+	display: grid;
+	grid-template-areas: 
+		"navigatie"
+		"snelheid"
+		"voedsel"
+		"temperatuur";
+	text-align: center;
+}
+
+.navigatie{
+  grid-area:navigatie;
+}
+.snelheid{
+  grid-area:snelheid;
+}
+.voedsel{
+  grid-area:voedsel;
+}
+.temperatuur{
+    grid-area: temperatuur;
+}
+
+.snelheid, .voedsel, .temperatuur {
+	font-family: 'Calibri', sans-serif;
+  	text-align: center;
+  	color: black;
+  	background: white;
+  	opacity: 0.9;
+    margin:  25px 0;
+    padding: 20px 20px;
+    width: 500px;
+    height: 500px;
+}
+
+
+section {
+	display: inline-block;
+	max-width: 1000px;
+  margin:  15px;
+}
+
+h1 {
+	font-family: Calibri;
+	color: #CC66FF;
+
+}
+
+h2 {
+	margin-top: 0;
+  	padding: 0 0 15px 0;
+  	color:  black;
+  	border-bottom: 1px solid #ccc;
+}
+
+@media only screen and (min-width: 0px) {
+
+  .container{
+    grid-template-rows: 1fr 1fr;
+    grid-template-column: 1fr 1fr 1fr 1fr;
+    grid-template-rows: minmax( 200px , 1fr);
+    display: grid;
+    grid-template-areas: 
+        "navigatie" 
+        "snelheid" 
+        "voedsel"  
+        "temperatuur"; 
+  }
+
+  .navigatie, {
+  	max-width: 320px;
+    margin-left: 5px;
+    margin-right:5px;
+  }
+  .logo {
+    max-width: 250px;
+    height: 90px;
+    padding-bottom: 10%;
+  }
+
+  .snelheid, .voedsel, .temperatuur{
+    width: 320px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+  }
+
+@media only screen and (min-width: 768px) {
+
+  .container{
+    grid-template-rows: 1fr 1fr;
+    grid-template-column: 1fr 1fr 1fr 1fr;
+    grid-template-rows: minmax( 300px , 1fr);
+    display: grid;
+    grid-template-areas: 
+        "navigatie navigatie" 
+        "snelheid snelheid" 
+        "voedsel voedsel"  
+        "temperatuur temperatuur "; 
+  }
+
+  .navigatie, {
+    max-width: 400px;
+  }
+  .logo {
+    max-width: 400px;
+    height: 150px;
+  }
+
+  .snelheid, .voedsel, .temperatuur{
+    width: 450px;
+
+  }
+
+
+@media only screen and (min-width: 1366px) {
+    .container{
+      grid-template-rows: 1fr 1fr ;
+      grid-template-rows: minmax( 500px , 1fr);
+      display: grid;
+      grid-template-areas: 
+          "navigatie navigatie " 
+          "snelheid voedsel"
+          "temperatuur temperatuur " 
+       
+  }
+   .snelheid, .voedsel, .temperatuur{
+    width: 500px;
+    margin-left: 25px;
+    }
+
+
+@media only screen and (min-width: 1920px){
+   .container{
+      grid-template-rows: 1fr 1fr ;
+      grid-template-rows: minmax( 1000px , 1fr);
+      display: grid;
+      grid-template-areas: 
+          "navigatie " 
+          "snelheid voedsel "
+          "temperatuur"
+  }
+  .logo {
+    width: 600px;
+    height: 100px;
+    padding-left: 20%;
+  }
+  .navigatie {
+    background-color: white;
+    opacity: 0.9;
+    margin:25px;
+  }
+
+  .snelheid, .voedsel, .temperatuur{
+    width: 600px;
+    margin-left: 25px;
+  }
+
+}
+
+
+
+
